@@ -1,0 +1,99 @@
+@use "../helpers" as *;
+
+.features {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: fluid(40, 73);
+  }
+
+  &__badge {
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-neutral-100);
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media (min-width: 640px) {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__title {
+    color: var(--color-primary-dark);
+    text-align: center;
+    letter-spacing: -0.125rem;
+  }
+
+  &__grid {
+    display: grid;
+    justify-content: center;
+    gap: fluid(16, 40);
+    grid-auto-rows: 404px;
+    grid-template-columns: repeat(auto-fit, minmax(345px, 480px));
+
+    @include small {
+      grid-template-columns: 450px;
+    }
+
+    @include x-small {
+      grid-template-columns: 380px;
+      grid-auto-rows: 280px;
+    }
+
+    @media (max-width: rem(420)) {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 280px;
+    }
+  }
+
+  &__card {
+    position: relative;
+    padding: 3.5rem 0.75rem;
+
+    @include small {
+      padding: 2.5rem 0.75rem;
+    }
+  }
+
+  &__card-bg {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  &__card-title {
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__card-text {
+    position: relative;
+    z-index: 1;
+    max-width: 80%;
+    font-size: fluid(16, 24);
+  }
+
+  &__card-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    @include x-small {
+      width: 3.25rem;
+      height: 3.25rem;
+    }
+  }
+}

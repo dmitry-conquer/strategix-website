@@ -1,79 +1,84 @@
 @use "../helpers" as *;
 
-.base-slider {
-  &__container {
+.gradient-slider {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: fluid(40, 80);
+  }
+
+  &__badge {
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-neutral-100);
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: fluid(12, 16);
   }
 
   &__title {
-    margin-bottom: fluid(40, 80);
     text-align: center;
     letter-spacing: -0.125rem;
   }
 
   &__wrapper {
     position: relative;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      padding: 0 2rem;
+    }
   }
 
   &__navigation {
     pointer-events: none;
     position: absolute;
-    top: 27%;
+    top: 45%;
     left: 0;
     z-index: 10;
-    display: flex;
+    display: none;
     width: 100%;
     justify-content: space-between;
 
-    @include small {
-      display: none;
+    @media (min-width: 768px) {
+      display: flex;
     }
   }
 
   &__nav-button {
+    background-color: var(--color-secondary);
+    transition: background-color 0.3s ease;
     pointer-events: auto;
     display: flex;
-    width: rem(56);
-    height: rem(56);
+    width: 3.5rem;
+    height: 3.5rem;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: var(--color-secondary);
-    transition: background-color 0.3s ease;
-
-    @media (min-width: 1024px) {
-      width: rem(72);
-      height: rem(72);
-    }
 
     &:hover {
       background-color: var(--color-primary);
     }
 
-    &--prev {
-      transform: translateX(-50%);
-      // Previous button specific styles if needed
+    @media (min-width: 1024px) {
+      width: 4.5rem;
+      height: 4.5rem;
     }
-
-    &--next {
-      transform: translateX(50%);
-      // Next button specific styles if needed
-    }
-  }
-
-  &__nav-icon {
-    width: rem(11);
-    height: rem(20);
   }
 
   &__slider {
-    overflow: hidden;
+    overflow: visible;
   }
 
   &__slides {
     @include small {
       display: flex;
-      gap: rem(24);
+      gap: 1.5rem;
       flex-direction: column;
     }
   }
@@ -86,26 +91,20 @@
   }
 
   &__slide-image {
-    margin-bottom: rem(16);
-    border-radius: rem(16);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
 
     @media (min-width: 768px) {
-      margin-bottom: rem(24);
+      margin-bottom: 1.5rem;
     }
   }
 
   &__slide-title {
     margin-bottom: fluid(8, 16);
-    font-size: fluid(28, 32);
-    line-height: 1.25;
-  }
-
-  &__slide-text {
-    // Default paragraph styles
   }
 
   &__pagination {
-    margin-top: rem(80);
+    margin-top: 5rem;
     display: none;
     justify-content: center;
 
