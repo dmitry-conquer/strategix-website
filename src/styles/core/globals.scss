@@ -1,0 +1,220 @@
+@use "helpers" as *;
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-primary);
+  font-size: fluid(16, 24);
+  line-height: 1.5;
+  line-height: 1.33;
+}
+
+// ===========================
+// 📐 CONTAINER & LAYOUT
+// ===========================
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+}
+
+.section-padding-y {
+  padding-block: var(--section-padding-y);
+}
+
+.section-padding-top {
+  padding-top: var(--section-padding-y);
+}
+
+.section-padding-bottom {
+  padding-bottom: var(--section-padding-y);
+}
+
+// ===========================
+// ✒️ TYPOGRAPHY
+// ===========================
+
+h1,
+.heading-xl {
+  font-size: fluid(70, 130);
+  line-height: 0.9;
+  text-shadow: var(--text-shadow);
+  text-align: center;
+  font-family: var(--font-family-accent);
+}
+
+h2,
+.heading-lg {
+  font-size: fluid(42, 80);
+  line-height: 1;
+  font-family: var(--font-family-accent);
+}
+
+h3,
+.heading-md {
+  font-size: fluid(28, 42);
+  line-height: 1.25;
+  font-family: var(--font-family-accent);
+}
+
+h4,
+.heading-sm {
+  font-size: fluid(20, 32);
+  line-height: 1.25;
+  font-family: var(--font-family-accent);
+}
+
+p,
+.text-base {
+  font-size: fluid(16, 24);
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+a:not([class]) {
+  @include hover {
+    text-decoration: underline;
+  }
+}
+
+p:not([class]):not(:last-of-type) {
+  margin-bottom: rem(16);
+}
+
+// ===========================
+// 🎯 UTILITIES
+// ===========================
+
+.left-bottom-clip-path {
+  clip-path: polygon(
+    6.25% 0.103%,
+    93.75% 0.103%,
+    93.75% 0.103%,
+    94.747% 0.183%,
+    95.693% 0.414%,
+    96.574% 0.784%,
+    97.38% 1.279%,
+    98.096% 1.889%,
+    98.71% 2.599%,
+    99.21% 3.397%,
+    99.583% 4.272%,
+    99.815% 5.21%,
+    99.896% 6.198%,
+    99.896% 93.802%,
+    99.896% 93.802%,
+    99.815% 94.79%,
+    99.583% 95.728%,
+    99.21% 96.603%,
+    98.71% 97.401%,
+    98.096% 98.111%,
+    97.38% 98.721%,
+    96.574% 99.216%,
+    95.693% 99.586%,
+    94.747% 99.817%,
+    93.75% 99.897%,
+    36.458% 99.897%,
+    36.458% 99.897%,
+    35.461% 99.817%,
+    34.516% 99.586%,
+    33.634% 99.216%,
+    32.829% 98.721%,
+    32.113% 98.111%,
+    31.498% 97.401%,
+    30.999% 96.603%,
+    30.626% 95.728%,
+    30.393% 94.79%,
+    30.313% 93.802%,
+    30.313% 90.702%,
+    30.313% 90.702%,
+    30.229% 89.68%,
+    29.989% 88.711%,
+    29.603% 87.806%,
+    29.087% 86.981%,
+    28.451% 86.247%,
+    27.711% 85.617%,
+    26.878% 85.104%,
+    25.967% 84.722%,
+    24.989% 84.483%,
+    23.958% 84.401%,
+    6.25% 84.401%,
+    6.25% 84.401%,
+    5.253% 84.321%,
+    4.307% 84.09%,
+    3.426% 83.72%,
+    2.62% 83.225%,
+    1.904% 82.616%,
+    1.29% 81.905%,
+    0.79% 81.107%,
+    0.417% 80.232%,
+    0.185% 79.294%,
+    0.104% 78.306%,
+    0.104% 6.198%,
+    0.104% 6.198%,
+    0.185% 5.21%,
+    0.417% 4.272%,
+    0.79% 3.397%,
+    1.29% 2.599%,
+    1.904% 1.889%,
+    2.62% 1.279%,
+    3.426% 0.784%,
+    4.307% 0.414%,
+    5.253% 0.183%,
+    6.25% 0.103%
+  );
+}
+
+.base-swiper-pagination,
+.gradient-swiper-pagination,
+.testimonials-swiper-pagination {
+  .swiper-pagination-bullet {
+    background-color: transparent;
+    border: 2px solid var(--color-neutral-300);
+    opacity: 1;
+    width: rem(10);
+    height: rem(10);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--color-neutral-300);
+    border: 1px solid var(--color-neutral-300);
+  }
+}
+
+.two-side-gradient {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    @media (max-width: 75rem) {
+      display: none;
+    }
+  }
+}
+
+@include large {
+  br {
+    display: none !important;
+  }
+}

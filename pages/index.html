@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css"
+      integrity="sha512-N2IsWuKsBYYiHNYdaEuK4eaRJ0onfUG+cdZilndYaMEhUGQq/McsFU75q3N+jbJUNXm6O+K52DRrK+bSpBGj0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      {{> header}}
+      <main>
+        <section class="hero" style="background-image: url(&quot;/images/hero-bg.png&quot;)">
+          <div class="hero__container container">
+            <div class="hero__content">
+              <span class="hero__badge">Revolutionizing Healthcare with Technology</span>
+              <h1 class="hero__title">
+                Innovative <br />
+                Healthcare Solutions
+              </h1>
+              <p class="hero__description">Empowering healthcare providers anytime, anywhere</p>
+              <div class="hero__actions">
+                <a href="#" class="hero__button button button--primary">Call Now 407-212-7092</a>
+                <a href="#" class="hero__button button button--secondary">book a meeting</a>
+              </div>
+
+              <a href="#about" class="hero__scroll">
+                <span class="hero__scroll-text">Start exploring</span>
+                <svg
+                  class="hero__scroll-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="23"
+                  viewBox="0 0 20 23"
+                  fill="none"
+                >
+                  <path
+                    d="M10.1297 22.3453C10.3258 22.3264 10.5113 22.2388 10.6597 22.0952L19.2563 13.8343C19.3531 13.7469 19.4331 13.6387 19.4915 13.5163C19.5499 13.3939 19.5855 13.2596 19.5962 13.1216C19.6069 12.9835 19.5926 12.8445 19.5539 12.7127C19.5153 12.581 19.4532 12.4592 19.3713 12.3547C19.2894 12.2502 19.1894 12.165 19.0773 12.1043C18.9652 12.0436 18.8432 12.0086 18.7187 12.0014C18.5941 11.9942 18.4696 12.0149 18.3524 12.0623C18.2352 12.1097 18.1278 12.1828 18.0365 12.2772L10.0498 19.9493L2.06314 12.2772C1.9719 12.1828 1.86449 12.1097 1.7473 12.0623C1.6301 12.0149 1.50552 11.9942 1.38098 12.0014C1.25644 12.0086 1.13448 12.0436 1.02236 12.1043C0.91025 12.165 0.810275 12.2502 0.728393 12.3547C0.646512 12.4592 0.584398 12.581 0.545752 12.7127C0.507106 12.8445 0.492718 12.9835 0.503444 13.1216C0.514171 13.2596 0.549793 13.3939 0.608189 13.5163C0.666585 13.6387 0.74656 13.7469 0.843352 13.8343L9.43994 22.0952C9.53394 22.1862 9.64345 22.2552 9.76195 22.2982C9.88045 22.3411 10.0055 22.3572 10.1297 22.3453Z"
+                    fill="white"
+                    fill-opacity="0.2"
+                  />
+                  <path
+                    d="M10.1297 16.3453C10.3258 16.3264 10.5113 16.2388 10.6597 16.0952L19.2563 7.83426C19.3531 7.74688 19.4331 7.63874 19.4915 7.5163C19.5499 7.39386 19.5855 7.25961 19.5962 7.12156C19.6069 6.9835 19.5926 6.84445 19.5539 6.7127C19.5153 6.58096 19.4532 6.4592 19.3713 6.35468C19.2894 6.25016 19.1894 6.16502 19.0773 6.10433C18.9652 6.04363 18.8432 6.00863 18.7187 6.0014C18.5941 5.99418 18.4696 6.01489 18.3524 6.06227C18.2352 6.10966 18.1278 6.18277 18.0365 6.27724L10.0498 13.9493L2.06314 6.27724C1.9719 6.18277 1.86449 6.10966 1.7473 6.06227C1.6301 6.01489 1.50552 5.99418 1.38098 6.0014C1.25644 6.00863 1.13448 6.04363 1.02236 6.10433C0.91025 6.16502 0.810275 6.25016 0.728393 6.35468C0.646512 6.4592 0.584398 6.58096 0.545752 6.7127C0.507106 6.84445 0.492718 6.9835 0.503444 7.12156C0.514171 7.25961 0.549793 7.39386 0.608189 7.5163C0.666585 7.63874 0.74656 7.74688 0.843352 7.83426L9.43994 16.0952C9.53394 16.1862 9.64345 16.2552 9.76195 16.2982C9.88045 16.3411 10.0055 16.3572 10.1297 16.3453Z"
+                    fill="white"
+                    fill-opacity="0.6"
+                  />
+                  <path
+                    d="M10.1297 10.3453C10.3258 10.3264 10.5113 10.2388 10.6597 10.0952L19.2563 1.83426C19.3531 1.74688 19.4331 1.63874 19.4915 1.5163C19.5499 1.39386 19.5855 1.25961 19.5962 1.12156C19.6069 0.983499 19.5926 0.844452 19.5539 0.712704C19.5153 0.580955 19.4532 0.459202 19.3713 0.354683C19.2894 0.250164 19.1894 0.165019 19.0773 0.104327C18.9652 0.043635 18.8432 0.00863135 18.7187 0.00140484C18.5941 -0.00582168 18.4696 0.0148861 18.3524 0.0622725C18.2352 0.109659 18.1278 0.182765 18.0365 0.277239L10.0498 7.94932L2.06314 0.277239C1.9719 0.182765 1.86449 0.109659 1.7473 0.0622725C1.6301 0.0148861 1.50552 -0.00582168 1.38098 0.00140484C1.25644 0.00863135 1.13448 0.043635 1.02236 0.104327C0.91025 0.165019 0.810275 0.250164 0.728393 0.354683C0.646512 0.459202 0.584398 0.580955 0.545752 0.712704C0.507106 0.844452 0.492718 0.983499 0.503444 1.12156C0.514171 1.25961 0.549793 1.39386 0.608189 1.5163C0.666585 1.63874 0.74656 1.74688 0.843352 1.83426L9.43994 10.0952C9.53394 10.1862 9.64345 10.2552 9.76195 10.2982C9.88045 10.3411 10.0055 10.3572 10.1297 10.3453Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="base-row section-padding-y" id="about">
+          <div class="base-row__container container">
+            <div class="base-row__content">
+              <h2 class="base-row__title">Vision Statement</h2>
+              <p class="base-row__description">
+                To be the leading partner for home healthcare agencies in the nation, providing pathways for long-term
+                success through strategic expertise and hands-on support.
+              </p>
+              <a href="#" class="base-row__button button-line"> read more about strategix </a>
+            </div>
+
+            <div class="base-row__media">
+              <img src="/images/circle.svg" alt="" class="base-row__circle" />
+              <img src="/images/right-particles.png" alt="" class="base-row__particles" />
+              <img src="/images/1.png" alt="" class="base-row__image" />
+            </div>
+          </div>
+        </section>
+
+        <section class="columns section-padding-y">
+          <div class="columns__container container">
+            <div class="columns__header">
+              <h2 class="columns__title">Mission Statement</h2>
+              <p class="columns__subtitle">
+                At Strategix Healthcare Solutions, we achieve our vision by delivering <br />
+                customized, high-impact consulting services that empower every stakeholder <br />
+                involved in the growth of home healthcare agencies across the nation:
+              </p>
+            </div>
+            <div class="columns__grid">
+              <div class="columns__card">
+                <img src="/images/icon1.svg" alt="" class="columns__card-icon" />
+                <h3 class="columns__card-title">From the Employee's Perspective:</h3>
+                <p class="columns__card-text">
+                  We foster a culture of growth, purpose, and continuous learning—ensuring our team is equipped with the
+                  tools, mentorship, and autonomy to deliver value to our clients. We believe that empowered employees
+                  build empowered clients.
+                </p>
+              </div>
+              <div class="columns__card">
+                <img src="/images/icon1.svg" alt="" class="columns__card-icon" />
+                <h3 class="columns__card-title">From the Employee's Perspective:</h3>
+                <p class="columns__card-text">
+                  We foster a culture of growth, purpose, and continuous learning—ensuring our team is equipped with the
+                  tools, mentorship, and autonomy to deliver value to our clients. We believe that empowered employees
+                  build empowered clients.
+                </p>
+              </div>
+              <div class="columns__card">
+                <img src="/images/icon1.svg" alt="" class="columns__card-icon" />
+                <h3 class="columns__card-title">From the Employee's Perspective:</h3>
+                <h4 class="columns__card-subtitle">From the Employee's Perspective:</h4>
+                <p class="columns__card-text">
+                  We walk alongside our clients from idea to execution, providing end-to-end support in licensure,
+                  compliance, operations, and sales. Our hands-on, collaborative approach ensures each agency is set up
+                  not only to survive—but to lead—in a competitive, ever-evolving healthcare environment.
+                </p>
+              </div>
+              <div class="columns__card">
+                <img src="/images/icon1.svg" alt="" class="columns__card-icon" />
+                <h3 class="columns__card-title">From the Employee's Perspective:</h3>
+                <p class="columns__card-text">
+                  We foster a culture of growth, purpose, and continuous learning—ensuring our team is equipped with the
+                  tools, mentorship, and autonomy to deliver value to our clients. We believe that empowered employees
+                  build empowered clients.
+                </p>
+              </div>
+            </div>
+            <div class="columns__footer">
+              <p class="columns__footer-text">
+                We are not just consultants—we are partners in purpose, <br />
+                committed to shaping a stronger, more successful <br />
+                healthcare future—one agency at a time.
+              </p>
+            </div>
+            <img src="/images/bottom-particles.png" alt="" class="columns__background" />
+          </div>
+        </section>
+
+        <section class="base-slider">
+          <div class="base-slider__container container">
+            <h2 class="base-slider__title">Strategix Core Values</h2>
+            <div class="base-slider__wrapper">
+              <div class="base-slider__navigation">
+                <button type="button" class="base-slider__nav-button base-slider__nav-button--prev base-swiper-prev">
+                  <svg class="base-slider__nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 20" fill="none">
+                    <path
+                      d="M0.00426632 10.4774C0.0231891 10.6734 0.110763 10.859 0.25437 11.0074L8.51535 19.604C8.60273 19.7008 8.71086 19.7807 8.8333 19.8391C8.95574 19.8975 9.09 19.9331 9.22805 19.9439C9.36611 19.9546 9.50516 19.9402 9.6369 19.9016C9.76865 19.8629 9.89041 19.8008 9.99493 19.7189C10.0994 19.637 10.1846 19.5371 10.2453 19.425C10.306 19.3128 10.341 19.1909 10.3482 19.0663C10.3554 18.9418 10.3347 18.8172 10.2873 18.7C10.2399 18.5828 10.1668 18.4754 10.0724 18.3842L2.40029 10.3975L10.0724 2.41079C10.1668 2.31956 10.24 2.21215 10.2873 2.09495C10.3347 1.97776 10.3554 1.85318 10.3482 1.72864C10.341 1.60409 10.306 1.48213 10.2453 1.37002C10.1846 1.25791 10.0994 1.15793 9.99493 1.07605C9.89041 0.994168 9.76865 0.932054 9.63691 0.893408C9.50516 0.854762 9.36611 0.840374 9.22805 0.851101C9.09 0.861827 8.95574 0.897449 8.8333 0.955845C8.71086 1.01424 8.60273 1.09422 8.51535 1.19101L0.25437 9.78759C0.163421 9.8816 0.0944076 9.99111 0.0514417 10.1096C0.00847585 10.2281 -0.00756782 10.3532 0.00426632 10.4774Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <button type="button" class="base-slider__nav-button base-slider__nav-button--next base-swiper-next">
+                  <svg class="base-slider__nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 20" fill="none">
+                    <path
+                      d="M10.9957 9.52361C10.9768 9.32757 10.8892 9.14199 10.7456 8.9936L2.48465 0.397009C2.39727 0.300217 2.28914 0.220242 2.1667 0.161846C2.04426 0.103449 1.91 0.0678293 1.77195 0.0571024C1.63389 0.0463754 1.49485 0.0607625 1.3631 0.0994092C1.23135 0.138054 1.1096 0.200169 1.00508 0.282049C0.900557 0.363932 0.815412 0.463907 0.75472 0.576021C0.694028 0.688137 0.659024 0.810097 0.651798 0.934639C0.644571 1.05918 0.665279 1.18376 0.712665 1.30095C0.760052 1.41815 0.833158 1.52556 0.927632 1.61679L8.59971 9.60349L0.92763 17.5902C0.833156 17.6814 0.76005 17.7888 0.712663 17.906C0.665277 18.0232 0.644569 18.1478 0.651796 18.2723C0.659022 18.3969 0.694026 18.5188 0.754717 18.631C0.815409 18.7431 0.900554 18.843 1.00507 18.9249C1.10959 19.0068 1.23135 19.0689 1.36309 19.1076C1.49484 19.1462 1.63389 19.1606 1.77195 19.1499C1.91 19.1391 2.04426 19.1035 2.1667 19.0451C2.28914 18.9867 2.39727 18.9068 2.48465 18.81L10.7456 10.2134C10.8366 10.1194 10.9056 10.0099 10.9486 9.89137C10.9915 9.77287 11.0076 9.64781 10.9957 9.52361Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="base-slider__slider slider-swiper" id="base-slider">
+                <div class="base-slider__slides swiper-wrapper">
+                  <div class="base-slider__slide swiper-slide">
+                    <img src="/images/slider1-1.png" alt="" class="base-slider__slide-image" />
+                    <h3 class="base-slider__slide-title">Integrity in Every Action</h3>
+                    <p class="base-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                  <div class="base-slider__slide swiper-slide">
+                    <img src="/images/slider1-1.png" alt="" class="base-slider__slide-image" />
+                    <h3 class="base-slider__slide-title">Integrity in Every Action</h3>
+                    <p class="base-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                  <div class="base-slider__slide swiper-slide">
+                    <img src="/images/slider1-1.png" alt="" class="base-slider__slide-image" />
+                    <h3 class="base-slider__slide-title">Integrity in Every Action</h3>
+                    <p class="base-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                  <div class="base-slider__slide swiper-slide">
+                    <img src="/images/slider1-1.png" alt="" class="base-slider__slide-image" />
+                    <h3 class="base-slider__slide-title">Integrity in Every Action</h3>
+                    <p class="base-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="base-slider__pagination base-swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      {{> footer}}
+
+      <script>
+        const backendData = {
+          smoothScroll: true,
+        };
+      </script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"
+        integrity="sha512-h5Vv+n+z0eRnlJoUlWMZ4PLQv4JfaCVtgU9TtRjNYuNltS5QCqi4D4eZn4UkzZZuG2p4VBz3YIlsB7A2NVrbww=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+    </div>
+    <script type="module" src="/src/scripts/main.ts" defer></script>
+  </body>
+</html>

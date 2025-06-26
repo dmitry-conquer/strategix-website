@@ -1,0 +1,71 @@
+@use "../helpers" as *;
+
+.button {
+  display: block;
+  border-radius: var(--radius-md);
+  border: var(--border-small) solid;
+  padding: rem(14) rem(40);
+  text-align: center;
+  font-size: fluid(14, 16);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color var(--transition-base);
+
+  @include x-small {
+    width: 100%;
+  }
+
+  &--primary {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-secondary);
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.button-line {
+  position: relative;
+  display: block;
+  border: var(--border-small) solid var(--color-secondary);
+  background-color: transparent;
+  border-radius: var(--radius-md);
+  padding: rem(12) rem(40);
+  text-align: center;
+  font-size: rem(14);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: letter-spacing 0.5s ease;
+
+  @include hover {
+    letter-spacing: 2.5px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(56);
+    height: rem(1);
+    top: 50%;
+    left: 100%;
+    transform: translate(-40%, -50%);
+    background-color: var(--color-secondary);
+    @include hover {
+      letter-spacing: 2px;
+    }
+  }
+}
