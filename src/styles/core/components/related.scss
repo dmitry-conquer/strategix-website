@@ -1,0 +1,96 @@
+@use "../helpers/" as *;
+
+.related {
+  &__container {
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(20);
+    margin-bottom: fluid(35, 80);
+  }
+
+  &__title {
+    font-size: fluid(20, 42);
+    line-height: 1.25;
+  }
+
+  &__link {
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: fluid(16, 40);
+
+    @include small {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__article {
+  }
+
+  &__article-link {
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: rem(24) fluid(16, 24);
+    background-color: var(--color-neutral-200);
+    border: rem(1) solid var(--color-neutral-300);
+    border-radius: rem(30);
+
+    @include hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    small {
+      border-radius: rem(24);
+    }
+  }
+
+  &__article-image {
+    width: 100%;
+    max-height: rem(290);
+    object-fit: cover;
+    border-radius: rem(24);
+    margin-bottom: rem(24);
+
+    @include small {
+      border-radius: rem(16);
+    }
+  }
+
+  &__article-content {
+  }
+
+  &__article-date {
+    display: block;
+    font-size: fluid(12, 16);
+    margin-bottom: rem(16);
+    line-height: 1;
+    text-transform: uppercase;
+
+    @include small {
+      margin-bottom: rem(24);
+    }
+  }
+
+  &__article-title {
+    margin-bottom: fluid(8, 16);
+    font-size: fluid(20, 32);
+  }
+
+  &__article-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    @include small {
+      -webkit-line-clamp: 4;
+    }
+  }
+}
