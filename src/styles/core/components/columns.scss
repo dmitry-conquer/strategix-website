@@ -80,6 +80,9 @@
 
   &__footer {
     margin-top: fluid(80, 100);
+  }
+
+  &__footer-text {
     text-align: center;
     font-family: var(--font-family-accent);
     font-size: fluid(20, 32);

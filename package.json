@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
-    "start": "vite preview"
+    "start": "vite preview",
+    "sprite": "vite build --mode sprite"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",

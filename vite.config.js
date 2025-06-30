@@ -18,6 +18,7 @@ fs.readdirSync(pagesDir).forEach(file => {
 
 export default defineConfig({
   appType: "mpa",
+  devSourcemap: true,
   css: {
     preprocessorOptions: {
       scss: {
@@ -54,12 +55,10 @@ export default defineConfig({
       name: "handlebars-watcher",
       configureServer(server) {
         const watcher = server.watcher;
-        
-        watcher.add([
-          path.resolve(__dirname, "components/**/*.html"),
-        ]);
-        
-        watcher.on("change", (file) => {
+
+        watcher.add([path.resolve(__dirname, "components/**/*.html")]);
+
+        watcher.on("change", file => {
           if (file.endsWith(".html")) {
             server.ws.send({
               type: "full-reload",

@@ -7,17 +7,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: rem(80);
-  padding-bottom: rem(96);
-
-  @media (min-width: 640px) {
-    padding-bottom: rem(32);
-  }
-
-  @media (min-width: 1024px) {
-    height: 100vh;
-    padding-top: rem(96);
-  }
+  padding-top: fluid(100, 220);
+  padding-bottom: fluid(80, 96);
 
   &__content {
     display: flex;
@@ -30,13 +21,12 @@
     border-radius: var(--radius-xl);
     padding: rem(8) rem(24);
     text-align: center;
-    font-size: rem(14);
+    font-size: fluid(14, 16);
     line-height: rem(16);
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--color-white);
     font-weight: 500;
-
     margin-bottom: fluid(8, 16);
   }
 
@@ -47,13 +37,13 @@
   }
 
   &__description {
-    margin-bottom: rem(40);
+    margin-bottom: fluid(24, 46);
     text-align: center;
     color: var(--color-white);
   }
 
   &__actions {
-    margin-bottom: rem(172);
+    margin-bottom: fluid(100, 172);
     display: flex;
     justify-content: center;
     gap: rem(16);

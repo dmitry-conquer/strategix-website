@@ -1,1 +1,83 @@
-<header></header>
+<header class="header" data-js-header>
+  <div class="header__container container">
+    <a href="/" class="header__logo">
+      <img src="/images/logo.png" alt="logo" class="header__logo-image" />
+    </a>
+    <nav class="header__nav header__nav--desktop">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="/" class="header__nav-link">About us</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="/" class="header__nav-link">services</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="/" class="header__nav-link">blog</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="/" class="header__nav-link">contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="#" class="header__cta button button--secondary">book a meeting</a>
+    <button class="header__menu-toggle header__menu-toggle--mobile" data-js-header-trigger-button>
+      <div class="header__menu-toggle-container">
+        <div class="header__menu-toggle-icon">
+          <div class="header__menu-toggle-line header__menu-toggle-line--top"></div>
+          <div class="header__menu-toggle-line header__menu-toggle-line--middle"></div>
+
+          <div class="header__menu-toggle-cross">
+            <div class="header__menu-toggle-cross-line header__menu-toggle-cross-line--left"></div>
+            <div class="header__menu-toggle-cross-line header__menu-toggle-cross-line--right"></div>
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+
+  <!-- Mobile menu overlay -->
+  <div class="header__overlay" data-js-header-overlay data-lenis-prevent>
+    <div class="header__overlay-content" data-lenis-prevent>
+      <nav class="header__mobile-nav">
+        <ul class="header__mobile-nav-list">
+          <li class="header__mobile-nav-item">
+            <a href="/" class="header__mobile-nav-link">About us</a>
+          </li>
+          <li class="header__mobile-nav-item">
+            <a href="/" class="header__mobile-nav-link">services</a>
+          </li>
+          <li class="header__mobile-nav-item">
+            <a href="/" class="header__mobile-nav-link">blog</a>
+          </li>
+          <li class="header__mobile-nav-item">
+            <a href="/" class="header__mobile-nav-link">contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__overlay-socials">
+        <a href="/" class="header__overlay-socials-link">
+          <img src="/images/link.svg" alt="linkedin" class="header__overlay-socials-image" />
+        </a>
+        <a href="/" class="header__overlay-socials-link">
+          <img src="/images/link.svg" alt="linkedin" class="header__overlay-socials-image" />
+        </a>
+        <a href="/" class="header__overlay-socials-link">
+          <img src="/images/link.svg" alt="linkedin" class="header__overlay-socials-image" />
+        </a>
+        <a href="/" class="header__overlay-socials-link">
+          <img src="/images/link.svg" alt="linkedin" class="header__overlay-socials-image" />
+        </a>
+      </div>
+
+      <div class="header__overlay-buttons">
+        <a href="#" class="header__overlay-button button button--secondary">Call Now (800) 123-4567</a>
+        <a href="#" class="header__overlay-button button button--primary">book a meeting</a>
+      </div>
+
+      <img src="/images/stra.svg" alt="" class="header__overlay-image" />
+
+    </div>
+    <img src="/images/header-bg.png" alt="" class="header__overlay-bg" />
+  </div>
+</header>
