@@ -1,0 +1,114 @@
+@use "../helpers/" as *;
+
+.services {
+  &__accordion-item {
+    transition: margin 0.3s ease;
+    background-color: var(--color-neutral-200);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: rem(30);
+    padding: rem(16) rem(60) rem(60) rem(60);
+
+    @include large {
+      padding: rem(24) rem(16) rem(80);
+    }
+
+    @include small {
+      border-radius: rem(16);
+    }
+
+    &:not(:first-child) {
+      margin-top: rem(-85);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      @include large {
+        padding-bottom: rem(24);
+      }
+    }
+
+    &.is-active {
+      padding-bottom: fluid(24, 60);
+
+      @include large {
+        padding-bottom: rem(24);
+      }
+    }
+    &.is-active + & {
+      margin-top: 0;
+    }
+  }
+
+  &__accordion-button {
+    width: 100%;
+    text-align: left;
+    padding: rem(15) 0;
+    margin: rem(-15) 0;
+    padding-bottom: rem(25);
+    font-size: rem(16);
+    text-transform: uppercase;
+
+    @include large {
+      font-family: var(--font-family-accent);
+      font-size: rem(20);
+      text-transform: none;
+    }
+  }
+
+  &__accordion-panel {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: rem(16);
+    will-change: max-height;
+
+    @include large {
+      max-height: 0;
+    }
+  }
+
+  &__accordion-panel-content {
+    display: flex;
+    gap: rem(20);
+    align-items: center;
+    justify-content: space-between;
+
+    @include large {
+      flex-direction: column;
+    }
+  }
+
+  &__accordion-panel-text {
+    padding-top: rem(24);
+    flex: 0 1 rem(566);
+
+    @include large {
+      flex: 0 1 auto;
+    }
+
+    h3 {
+      margin-bottom: rem(16);
+      font-size: fluid(20, 42);
+      @include large {
+        display: none;
+      }
+    }
+  }
+
+  &__accordion-panel-image {
+    flex: 0 1 rem(656);
+    border-radius: rem(24);
+    align-self: flex-start;
+
+    @include large {
+      flex: 0 1 auto;
+    }
+
+    @include small {
+      border-radius: rem(16);
+    }
+  }
+}

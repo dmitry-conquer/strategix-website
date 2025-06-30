@@ -1,0 +1,43 @@
+@use "../helpers" as *;
+
+.base-hero {
+  padding-top: fluid(80, 180);
+  padding-bottom: fluid(60, 80);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: fluid(42, 80);
+    text-shadow: none;
+    line-height: 1;
+    letter-spacing: -2px;
+    position: relative;
+    text-align: center;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 500%;
+      height: rem(1);
+      top: 70%;
+      background-color: var(--color-primary);
+    }
+    &::before {
+      left: calc(100% + rem(30));
+      @include small {
+        left: calc(100% + rem(10));
+      }
+    }
+    &::after {
+      right: calc(100% + rem(30));
+      @include small {
+        right: calc(100% + rem(10));
+      }
+    }
+  }
+}

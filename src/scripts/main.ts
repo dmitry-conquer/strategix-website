@@ -1,14 +1,11 @@
 import "../styles/main.scss";
 import Scroll from "./services/scroll";
-import { BaseSlider, GradientSlider, TestimonialsSlider, BackTopButton, Header } from "./components";
-// @ts-ignore
-import homeIcon from '../../public/images/icons/home.svg';
+import { BaseSlider, GradientSlider, TestimonialsSlider, BackTopButton, Header, Accordion } from "./components";
 
 const scroll = new Scroll();
 
 const initScrollServices = (): void => {
   scroll.initSmoothScroll();
-  scroll.initAOS();
 };
 
 const initUIComponents = (): void => {
@@ -17,6 +14,7 @@ const initUIComponents = (): void => {
   new GradientSlider();
   new TestimonialsSlider();
   new BackTopButton();
+  new Accordion();
 };
 
 document.addEventListener("DOMContentLoaded", (): void => {
