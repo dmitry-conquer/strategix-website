@@ -3,22 +3,27 @@
 .contact {
   padding: fluid(80, 180) 0;
 
-
   &__container {
     display: flex;
     justify-content: space-between;
     column-gap: rem(24);
 
     @include medium {
+      padding: 0;
       flex-direction: column;
+      row-gap: rem(100);
     }
   }
 
   &__bg {
     position: absolute;
-    right: 0;
+    right: -5%;
     top: 6%;
     z-index: -1;
+
+    @include medium {
+      display: none;
+    }
   }
 
   &__content {
@@ -26,9 +31,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include medium {
+      flex-basis: auto;
+      display: contents;
+    }
   }
 
   &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include medium {
+      padding: 0 rem(20);
+    }
+
+    @include small {
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__label {
@@ -57,6 +79,12 @@
   &__info {
     padding-left: rem(12);
     border-left: 1px solid var(--color-neutral-300);
+
+    @include medium {
+      padding: 0 rem(12);
+      margin-left: rem(20);
+      order: 3;
+    }
   }
 
   &__info-item {
@@ -81,11 +109,40 @@
     }
   }
 
+  &__form-wrapper {
+    position: relative;
+    flex-basis: rem(580);
+  }
+
   &__form {
     background-color: var(--color-primary-dark);
-    flex-basis: rem(580);
     border-radius: rem(30);
     padding: fluid(40, 60) fluid(15, 40);
+
+    @include medium {
+      border-radius: 0;
+      flex-basis: auto;
+    }
+  }
+
+  &__form-bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+
+    &--top {
+      bottom: calc(100% - 40px);
+    }
+
+    &--bottom {
+      top: calc(100% - 40px);
+      transform: rotate(180deg);
+    }
+
+    @include above-small {
+      display: none;
+    }
   }
 
   &__form-title {
