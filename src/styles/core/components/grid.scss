@@ -1,0 +1,73 @@
+@use "../helpers" as *;
+
+.grid {
+  &__container {
+    display: flex;
+    gap: fluid(16, 40);
+    align-items: stretch;
+  }
+
+  &__main {
+    flex-basis: rem(1000);
+
+    @include large {
+      flex-basis: 100%;
+    }
+  }
+
+  &__content {
+    background-color: var(--color-neutral-200);
+    border: rem(1) solid var(--color-neutral-300);
+    padding: fluid(24, 40) fluid(12, 97) fluid(24, 40) fluid(12, 24);
+    border-radius: rem(24);
+    margin-bottom: fluid(16, 40);
+
+    h2 {
+      margin-bottom: rem(16);
+      color: var(--color-primary);
+    }
+
+    p:not(:last-child) {
+      margin-bottom: fluid(8, 40);
+    }
+
+    @include small {
+      border-radius: rem(16);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    column-gap: fluid(12, 40);
+  }
+
+  &__footer-img {
+    flex: 0 1 50%;
+    img {
+      border-radius: rem(24);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: rem(140);
+
+      @include small {
+        border-radius: rem(16);
+      }
+    }
+  }
+
+  &__aside {
+    flex-basis: rem(480);
+
+    @include large {
+      display: none;
+    }
+  }
+
+  &__aside-img {
+    border-radius: rem(24);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
