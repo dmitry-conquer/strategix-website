@@ -1,0 +1,44 @@
+@use "../helpers/" as *;
+
+.page-hero {
+  padding-top: fluid(100, 220);
+  padding-bottom: fluid(163, 327);
+  background-color: var(--color-primary-dark);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  @include x-small {
+    background-size: 300%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__label {
+    font-size: fluid(11, 16);
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding: rem(8) rem(24);
+    border-radius: rem(16);
+    border: rem(1) solid var(--color-primary);
+    margin-bottom: fluid(16, 32);
+    letter-spacing: 0.96px;
+  }
+
+  &__title {
+    text-shadow: none;
+    color: var(--color-white);
+    margin-bottom: fluid(24, 32);
+  }
+
+  &__subtitle {
+    line-height: 1.33;
+    color: var(--color-white);
+  }
+}
