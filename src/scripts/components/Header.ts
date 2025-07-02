@@ -62,7 +62,8 @@ export class Header {
     if (
       target.closest(this.selectors.triggerButton) ||
       target.closest(this.selectors.overlay) ||
-      target.closest(this.selectors.itemHasSubmenu)
+      target.closest(this.selectors.itemHasSubmenu) ||
+      target.closest("[data-micromodal-trigger]")
     )
       return;
     this.setActive(false);

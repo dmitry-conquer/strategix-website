@@ -11,7 +11,7 @@
   visibility: hidden;
   pointer-events: none;
   transition: all 0.3s ease;
-  padding: rem(50) 0;
+  padding: fluid(20, 50) 0;
   &.is-open {
     opacity: 1;
     visibility: visible;
@@ -68,7 +68,7 @@
   }
   &__content {
     padding: rem(24);
-    background-color: #fff;
+    background-color: var(--color-primary-dark);
     border-radius: rem(13);
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -76,12 +76,12 @@
     position: relative;
   }
   &__title {
-    font-size: rem(20);
-    color: #626262;
-    margin-bottom: rem(12);
-    font-weight: 700;
-    line-height: 1.2;
+    color: var(--color-white);
     text-align: center;
+    font-size: rem(42);
+    line-height: 1.14;
+    letter-spacing: -2px;
+    margin-bottom: rem(8);
   }
   &__form {
   }
@@ -92,15 +92,15 @@
     @media (any-hover: hover) {
       &:hover {
         & svg {
-          color: rgb(179, 0, 0);
+          color: rgb(255, 2, 2);
         }
       }
     }
     svg {
       pointer-events: none;
-      width: rem(30);
-      height: rem(30);
-      color: #626262;
+      width: rem(35);
+      height: rem(35);
+      color: var(--color-white);
     }
   }
 }

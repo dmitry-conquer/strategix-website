@@ -12,7 +12,7 @@
     />
     <title>Home page</title>
   </head>
-  <body id="home">
+  <body id="home" data-smooth-scroll="true">
     <div class="wrapper">
       {{> header}}
       <main>
@@ -27,7 +27,14 @@
               <p class="hero__description">Empowering healthcare providers anytime, anywhere</p>
               <div class="hero__actions">
                 <a href="#" class="hero__button button button--primary">Call Now 407-212-7092</a>
-                <a href="#" class="hero__button button button--secondary">book a Consultation</a>
+                <a
+                  href="#"
+                  aria-label="Open Contact Form"
+                  data-micromodal-trigger="modal-window"
+                  aria-controls="modal-window"
+                  class="hero__button button button--secondary"
+                  >book a Consultation</a
+                >
               </div>
 
               <a href="#about" class="hero__scroll">
@@ -477,9 +484,9 @@
           </div>
         </section>
       </main>
-      {{> footer}}
+      {{> footer}} {{> modal}}
 
-      <!-- <script type="text/javascript" src="https://form.jotform.com/jsform/251815102994155"></script> -->
+      
 
       <script>
         const backendData = {
