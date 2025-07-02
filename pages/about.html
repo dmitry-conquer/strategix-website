@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css"
+      integrity="sha512-N2IsWuKsBYYiHNYdaEuK4eaRJ0onfUG+cdZilndYaMEhUGQq/McsFU75q3N+jbJUNXm6O+K52DRrK+bSpBGj0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>About</title>
   </head>
-  <body>
+  <body id="home">
     <div class="wrapper">
       {{> header}}
       <main>
@@ -17,7 +24,7 @@
           </div>
         </section>
 
-        <section class="grid section-padding-y">
+        <section class="grid section-padding-top">
           <div class="grid__container container section-padding-top">
             <div class="grid__main">
               <div class="grid__content">
@@ -47,9 +54,271 @@
             </div>
           </div>
         </section>
+
+        <section class="content-dec">
+          <div class="content-dec__container container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="content-dec__icon content-dec__icon--small"
+              viewBox="0 0 96 96"
+              fill="none"
+            >
+              <circle cx="48" cy="48" r="47" stroke="#AE8B58" stroke-linecap="round" stroke-dasharray="3.33 6.66" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="content-dec__icon content-dec__icon--big"
+              viewBox="0 0 96 96"
+              fill="none"
+            >
+              <circle cx="48" cy="48" r="47" stroke="#AE8B58" stroke-linecap="round" stroke-dasharray="3.33 6.66" />
+            </svg>
+            <div class="content-dec__content">
+              <p>
+                Through our mission, we serve as catalysts for lasting change. For agency owners, we operate with a
+                founder’s mindset—understanding the weight of responsibility and the risk of entrepreneurship. We build
+                roadmaps that reflect their dreams and ensure compliance, efficiency, and profitability. For employees,
+                we cultivate a culture of learning and ownership. For stakeholders and partners, we raise the industry
+                standard with every touchpoint—committed to ethical business, sustainable results, and shared success.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="base-slider">
+          <div class="base-slider__container container">
+            <h2 class="base-slider__title">Strategix Core Values</h2>
+            <div class="base-slider__wrapper">
+              <div class="base-slider__navigation">
+                <button type="button" class="base-slider__nav-button base-slider__nav-button--prev base-swiper-prev">
+                  <svg class="base-slider__nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 20" fill="none">
+                    <path
+                      d="M0.00426632 10.4774C0.0231891 10.6734 0.110763 10.859 0.25437 11.0074L8.51535 19.604C8.60273 19.7008 8.71086 19.7807 8.8333 19.8391C8.95574 19.8975 9.09 19.9331 9.22805 19.9439C9.36611 19.9546 9.50516 19.9402 9.6369 19.9016C9.76865 19.8629 9.89041 19.8008 9.99493 19.7189C10.0994 19.637 10.1846 19.5371 10.2453 19.425C10.306 19.3128 10.341 19.1909 10.3482 19.0663C10.3554 18.9418 10.3347 18.8172 10.2873 18.7C10.2399 18.5828 10.1668 18.4754 10.0724 18.3842L2.40029 10.3975L10.0724 2.41079C10.1668 2.31956 10.24 2.21215 10.2873 2.09495C10.3347 1.97776 10.3554 1.85318 10.3482 1.72864C10.341 1.60409 10.306 1.48213 10.2453 1.37002C10.1846 1.25791 10.0994 1.15793 9.99493 1.07605C9.89041 0.994168 9.76865 0.932054 9.63691 0.893408C9.50516 0.854762 9.36611 0.840374 9.22805 0.851101C9.09 0.861827 8.95574 0.897449 8.8333 0.955845C8.71086 1.01424 8.60273 1.09422 8.51535 1.19101L0.25437 9.78759C0.163421 9.8816 0.0944076 9.99111 0.0514417 10.1096C0.00847585 10.2281 -0.00756782 10.3532 0.00426632 10.4774Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <button type="button" class="base-slider__nav-button base-slider__nav-button--next base-swiper-next">
+                  <svg class="base-slider__nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 20" fill="none">
+                    <path
+                      d="M10.9957 9.52361C10.9768 9.32757 10.8892 9.14199 10.7456 8.9936L2.48465 0.397009C2.39727 0.300217 2.28914 0.220242 2.1667 0.161846C2.04426 0.103449 1.91 0.0678293 1.77195 0.0571024C1.63389 0.0463754 1.49485 0.0607625 1.3631 0.0994092C1.23135 0.138054 1.1096 0.200169 1.00508 0.282049C0.900557 0.363932 0.815412 0.463907 0.75472 0.576021C0.694028 0.688137 0.659024 0.810097 0.651798 0.934639C0.644571 1.05918 0.665279 1.18376 0.712665 1.30095C0.760052 1.41815 0.833158 1.52556 0.927632 1.61679L8.59971 9.60349L0.92763 17.5902C0.833156 17.6814 0.76005 17.7888 0.712663 17.906C0.665277 18.0232 0.644569 18.1478 0.651796 18.2723C0.659022 18.3969 0.694026 18.5188 0.754717 18.631C0.815409 18.7431 0.900554 18.843 1.00507 18.9249C1.10959 19.0068 1.23135 19.0689 1.36309 19.1076C1.49484 19.1462 1.63389 19.1606 1.77195 19.1499C1.91 19.1391 2.04426 19.1035 2.1667 19.0451C2.28914 18.9867 2.39727 18.9068 2.48465 18.81L10.7456 10.2134C10.8366 10.1194 10.9056 10.0099 10.9486 9.89137C10.9915 9.77287 11.0076 9.64781 10.9957 9.52361Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="base-slider__slider slider-swiper" id="base-slider">
+                <div class="base-slider__slides swiper-wrapper">
+                  <div class="base-slider__slide swiper-slide">
+                    <img src="/images/slider1-1.png" alt="" class="base-slider__slide-image" />
+                    <h3 class="base-slider__slide-title">Integrity in Every Action</h3>
+                    <p class="base-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                  <div class="base-slider__slide swiper-slide">
+                    <img src="/images/slider1-1.png" alt="" class="base-slider__slide-image" />
+                    <h3 class="base-slider__slide-title">Integrity in Every Action</h3>
+                    <p class="base-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                  <div class="base-slider__slide swiper-slide">
+                    <img src="/images/slider1-1.png" alt="" class="base-slider__slide-image" />
+                    <h3 class="base-slider__slide-title">Integrity in Every Action</h3>
+                    <p class="base-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                  <div class="base-slider__slide swiper-slide">
+                    <img src="/images/slider1-1.png" alt="" class="base-slider__slide-image" />
+                    <h3 class="base-slider__slide-title">Integrity in Every Action</h3>
+                    <p class="base-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="base-slider__pagination base-swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="description" style="background-image: url(&quot;/images/desc.png&quot;)">
+          <div class="description__container container">
+            <div class="description__top">
+              <p class="description__top-text">
+                Strategix isn’t a vendor. We’re a mission-driven, results-obsessed extension of your leadership team.
+                From licensure to leadership development, compliance to sales transformation—we help you not just
+                survive, but lead in a competitive healthcare market.
+              </p>
+            </div>
+            <div class="description__bottom">
+              <p class="description__bottom-text">
+                Because when you partner with Strategix, you're not just hiring a consultant—you're gaining a
+                purpose-driven ally committed to building a stronger, smarter, and more successful healthcare future
+              </p>
+              <p class="description__bottom-highlight">—one agency at a time.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="gradient-slider section-padding-y">
+          <div class="gradient-slider__container container section-padding-top">
+            <div class="gradient-slider__header">
+              <span class="gradient-slider__badge"
+                >Built on Purpose. Delivered with Integrity. Designed for Your Long-Term Success</span
+              >
+              <h2 class="gradient-slider__title">Strategix Five-Point Guarantee</h2>
+            </div>
+            <div class="gradient-slider__wrapper two-side-gradient">
+              <div class="gradient-slider__navigation">
+                <button
+                  type="button"
+                  class="gradient-slider__nav-button gradient-slider__nav-button--prev gradient-swiper-prev"
+                >
+                  <svg
+                    class="gradient-slider__nav-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="11"
+                    height="20"
+                    viewBox="0 0 11 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.00426632 10.4774C0.0231891 10.6734 0.110763 10.859 0.25437 11.0074L8.51535 19.604C8.60273 19.7008 8.71086 19.7807 8.8333 19.8391C8.95574 19.8975 9.09 19.9331 9.22805 19.9439C9.36611 19.9546 9.50516 19.9402 9.6369 19.9016C9.76865 19.8629 9.89041 19.8008 9.99493 19.7189C10.0994 19.637 10.1846 19.5371 10.2453 19.425C10.306 19.3128 10.341 19.1909 10.3482 19.0663C10.3554 18.9418 10.3347 18.8172 10.2873 18.7C10.2399 18.5828 10.1668 18.4754 10.0724 18.3842L2.40029 10.3975L10.0724 2.41079C10.1668 2.31956 10.24 2.21215 10.2873 2.09495C10.3347 1.97776 10.3554 1.85318 10.3482 1.72864C10.341 1.60409 10.306 1.48213 10.2453 1.37002C10.1846 1.25791 10.0994 1.15793 9.99493 1.07605C9.89041 0.994168 9.76865 0.932054 9.63691 0.893408C9.50516 0.854762 9.36611 0.840374 9.22805 0.851101C9.09 0.861827 8.95574 0.897449 8.8333 0.955845C8.71086 1.01424 8.60273 1.09422 8.51535 1.19101L0.25437 9.78759C0.163421 9.8816 0.0944076 9.99111 0.0514417 10.1096C0.00847585 10.2281 -0.00756782 10.3532 0.00426632 10.4774Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="gradient-slider__nav-button gradient-slider__nav-button--next gradient-swiper-next"
+                >
+                  <svg
+                    class="gradient-slider__nav-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="11"
+                    height="20"
+                    viewBox="0 0 11 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.9957 9.52361C10.9768 9.32757 10.8892 9.14199 10.7456 8.9936L2.48465 0.397009C2.39727 0.300217 2.28914 0.220242 2.1667 0.161846C2.04426 0.103449 1.91 0.0678293 1.77195 0.0571024C1.63389 0.0463754 1.49485 0.0607625 1.3631 0.0994092C1.23135 0.138054 1.1096 0.200169 1.00508 0.282049C0.900557 0.363932 0.815412 0.463907 0.75472 0.576021C0.694028 0.688137 0.659024 0.810097 0.651798 0.934639C0.644571 1.05918 0.665279 1.18376 0.712665 1.30095C0.760052 1.41815 0.833158 1.52556 0.927632 1.61679L8.59971 9.60349L0.92763 17.5902C0.833156 17.6814 0.76005 17.7888 0.712663 17.906C0.665277 18.0232 0.644569 18.1478 0.651796 18.2723C0.659022 18.3969 0.694026 18.5188 0.754717 18.631C0.815409 18.7431 0.900554 18.843 1.00507 18.9249C1.10959 19.0068 1.23135 19.0689 1.36309 19.1076C1.49484 19.1462 1.63389 19.1606 1.77195 19.1499C1.91 19.1391 2.04426 19.1035 2.1667 19.0451C2.28914 18.9867 2.39727 18.9068 2.48465 18.81L10.7456 10.2134C10.8366 10.1194 10.9056 10.0099 10.9486 9.89137C10.9915 9.77287 11.0076 9.64781 10.9957 9.52361Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="gradient-slider__slider slider-swiper" id="gradient-slider">
+                <div class="gradient-slider__slides swiper-wrapper">
+                  <div class="gradient-slider__slide swiper-slide">
+                    <img src="/images/circle-slide-1.png" alt="" class="gradient-slider__slide-image" />
+                    <h3 class="gradient-slider__slide-title">Integrity in Every Action</h3>
+                    <p class="gradient-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                  <div class="gradient-slider__slide swiper-slide">
+                    <img src="/images/circle-slide-2.png" alt="" class="gradient-slider__slide-image" />
+                    <h3 class="gradient-slider__slide-title">Excellence in Service</h3>
+                    <p class="gradient-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                  <div class="gradient-slider__slide swiper-slide">
+                    <img src="/images/circle-slide-3.png" alt="" class="gradient-slider__slide-image" />
+                    <h3 class="gradient-slider__slide-title">Innovation in Solutions</h3>
+                    <p class="gradient-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                  <div class="gradient-slider__slide swiper-slide">
+                    <img src="/images/circle-slide-4.png" alt="" class="gradient-slider__slide-image" />
+                    <h3 class="gradient-slider__slide-title">Partnership in Growth</h3>
+                    <p class="gradient-slider__slide-text">
+                      We lead with honesty, transparency, and ethical decision-making in all our engagements. Our
+                      clients and partners trust us because we uphold the highest standards—always.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="gradient-slider__pagination gradient-swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="aside-image section-padding-y">
+          <div class="aside-image__container container">
+            <div class="aside-image__image">
+              <img src="/images/aside2.png" alt="" />
+            </div>
+            <div class="aside-image__content">
+              <h2>Meet Team Strategix</h2>
+              <div class="aside-image__text">
+                <p>
+                  Founded and led by Priyanka Sipp, a seasoned expert with over 15 years in healthcare operations,
+                  business development, and leadership. Team Strategix brings real-world experience and proven
+                  strategies to agencies across the nation. Having worked inskilled home health and home care agencies
+                  from New York to California, Team Strategix is marked by transformation—revitalizing operations, and
+                  mentoring teams to sustainable excellence.
+                </p>
+                <p>
+                  Team Strategix channels their passion and experience into something bigger everyday: a national
+                  platform for empowering agency owners and leadership teams with the tools, support, and strategy they
+                  need to thrive.
+                </p>
+              </div>
+              <img src="/images/aside2-mob.png" alt="" class="aside-image__image-mob" />
+              <div class="aside-image__text">
+                <p>
+                  In addition to its visionary leadership, Team Strategix is comprised of a powerful collective of
+                  coaches, consultants, and resource specialists—each an expert in their field. Together, they offer
+                  deep knowledge in operational efficiency, regulatory compliance, financial management including
+                  billing, and strategic improvement.
+                </p>
+                <p>
+                  This expert team brings more than 40 years of combined industry experience, equipping agencies with
+                  the insight and innovation required to navigate complex healthcare challenges, scale with confidence,
+                  and remain compliant in an ever-changing regulatory landscape.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta section-padding-y" style="background-image: url(&quot;/images/cta-bg.png&quot;)">
+          <div class="cta__container container">
+            <div class="cta__content">
+              <h2 class="cta__title">
+                Ready to take your healthcare <br />
+                agency to the next level?
+              </h2>
+              <p class="cta__description">
+                Whether you're aiming to streamline operations, ensure compliance, or grow your business, the expert
+                team at Strategix Healthcare Solutions is here to help. Let's discuss how we can drive your agency's
+                success—together.
+              </p>
+              <a href="#" class="cta__button button button--primary">book a meeting</a>
+            </div>
+          </div>
+        </section>
       </main>
       {{> footer}}
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"
+      integrity="sha512-h5Vv+n+z0eRnlJoUlWMZ4PLQv4JfaCVtgU9TtRjNYuNltS5QCqi4D4eZn4UkzZZuG2p4VBz3YIlsB7A2NVrbww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="module" src="/src/scripts/main.ts" defer></script>
   </body>
 </html>

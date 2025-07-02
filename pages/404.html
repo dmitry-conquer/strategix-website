@@ -8,7 +8,19 @@
   <body>
     <div class="wrapper">
       {{> header}}
-      <main>Not Found</main>
+      <main>
+        <section class="not-found">
+          <div class="not-found__container container">
+            <h1 class="not-found__title">Oops</h1>
+            <p class="not-found__description">
+              This page has gone into a strategy session. <br />
+              But don't worry - we'll help you find the right direction.
+            </p>
+            <img src="/images/404.png" alt="" class="not-found__image" />
+            <a href="/" class="not-found__button button button--transparent">back to home page</a>
+          </div>
+        </section>
+      </main>
       {{> footer}}
     </div>
     <script type="module" src="/src/scripts/main.ts" defer></script>

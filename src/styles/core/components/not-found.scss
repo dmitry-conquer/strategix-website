@@ -1,0 +1,35 @@
+@use "../helpers/" as *;
+
+.not-found {
+  padding: fluid(116, 174) 0 fluid(206, 222);
+  &__container {
+    max-width: rem(820);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    line-height: 1.15;
+    font-size: rem(42);
+    margin-bottom: fluid(12, 32);
+    letter-spacing: -2px;
+    text-shadow: none;
+  }
+
+  &__description {
+    line-height: 1.33;
+    margin-bottom: rem(40);
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-bottom: rem(60);
+  }
+
+  &__button {
+  }
+}

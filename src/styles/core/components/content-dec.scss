@@ -1,0 +1,42 @@
+@use "../helpers" as *;
+
+.content-dec {
+  padding-top: fluid(152, 317);
+  padding-bottom: fluid(152, 206);
+  &__container {
+    max-width: rem(1327);
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    &--small {
+      width: fluid(68, 96);
+      height: auto;
+      top: rem(-44);
+      left: fluid(16, 67);
+      transform: translateY(-100%);
+    }
+    &--big {
+      width: fluid(68, 152);
+      height: auto;
+      bottom: rem(-29);
+      right: 0;
+      transform: translateY(100%);
+
+      @include small {
+        right: rem(16);
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    p {
+      font-size: fluid(20, 32);
+      font-family: var(--font-family-accent);
+      line-height: 1.25;
+    }
+  }
+}
