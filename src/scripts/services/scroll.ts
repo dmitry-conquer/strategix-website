@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 
@@ -9,6 +11,12 @@ export default class Scroll {
     this.lenis = new Lenis({
       autoRaf: true,
       anchors: true,
+    });
+
+    AOS.init({
+      once: true,
+      disable: "phone",
+      duration: 600,
     });
   }
 

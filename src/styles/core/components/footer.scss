@@ -3,8 +3,11 @@
 .footer {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  position: relative;
 
   &__container {
+    position: relative;
+    z-index: 5;
     margin: 0 auto 2.5rem;
     max-width: 116rem;
     border-radius: 1.5rem;
@@ -169,6 +172,22 @@
   &__copyright {
     p {
       font-size: fluid(14, 16);
+    }
+  }
+
+  &__word {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 85%;
+    object-fit: contain;
+    z-index: 3;
+    transform: translateX(-50%);
+    pointer-events: none;
+
+    @include large {
+      display: none;
     }
   }
 }
