@@ -122,12 +122,19 @@
   }
 
   &__badge {
+    flex-shrink: 0;
     width: 5.75rem;
     height: 5.75rem;
 
     @media (min-width: 475px) {
       width: 9.75rem;
       height: 9.75rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
 
@@ -160,6 +167,8 @@
   }
 
   &__copyright {
-    font-size: fluid(14, 16);
+    p {
+      font-size: fluid(14, 16);
+    }
   }
 }
