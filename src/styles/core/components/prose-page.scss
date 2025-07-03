@@ -1,0 +1,8 @@
+@use "../helpers/" as *;
+
+.prose-page {
+  padding: fluid(40, 80) 0;
+  h1 {
+    text-shadow: none;
+  }
+}
