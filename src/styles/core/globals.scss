@@ -61,7 +61,9 @@ h2,
   line-height: 1;
   font-family: var(--font-family-accent);
   color: var(--color-primary-dark);
-  letter-spacing: -2px;
+  @include above-large {
+    letter-spacing: -2px;
+  }
 }
 
 h3,

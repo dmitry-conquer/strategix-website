@@ -14,7 +14,11 @@
     line-height: 1.15;
     font-size: rem(42);
     margin-bottom: fluid(12, 32);
-    letter-spacing: -2px;
+
+    @include above-large {
+      letter-spacing: -0.125rem;
+    }
+
     text-shadow: none;
   }
 

@@ -31,7 +31,11 @@
 
   &__title {
     margin-bottom: rem(24);
-    letter-spacing: -0.125rem;
+
+    @include above-large {
+      letter-spacing: -0.125rem;
+    }
+
     color: var(--color-white);
   }
 

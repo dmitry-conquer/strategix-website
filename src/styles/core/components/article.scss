@@ -21,7 +21,12 @@
     font-size: fluid(42, 80);
     text-shadow: none;
     line-height: 1;
-    letter-spacing: -2px;
+
+    @include above-large {
+      letter-spacing: -2px;
+    }
+
+    
   }
 
   &__content {

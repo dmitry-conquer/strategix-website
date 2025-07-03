@@ -23,7 +23,11 @@
 
   &__title {
     text-align: center;
-    letter-spacing: -0.125rem;
+
+    @include above-large {
+      letter-spacing: -0.125rem;
+    }
+
     margin-bottom: rem(24);
     line-height: 1.15;
 
