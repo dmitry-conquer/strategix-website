@@ -81,4 +81,32 @@
       }
     }
   }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 2rem;
+    font-size: 14px;
+  
+    a,
+    span {
+      padding: 6px 10px;
+      border: 1px solid var(--color-primary);
+      border-radius: 3px;
+      color: var(--color-primary-dark);
+      text-decoration: none;
+    }
+  
+    a:hover {
+      background-color: var(--color-secondary);
+      color: #fff;
+    }
+  
+    .current {
+      background-color: var(--color-primary-dark);
+      color: #fff;
+      pointer-events: none;
+    }
+  }
 }
