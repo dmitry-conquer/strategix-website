@@ -68,7 +68,7 @@
     line-height: 1.15;
 
     @include above-large {
-        letter-spacing: -0.125rem;
+      letter-spacing: -0.125rem;
     }
 
     margin-bottom: fluid(16, 24);
@@ -116,6 +116,10 @@
   &__form-wrapper {
     position: relative;
     flex-basis: rem(580);
+
+    @include medium {
+      flex-basis: auto;
+    }
   }
 
   &__form {
@@ -125,7 +129,6 @@
 
     @include medium {
       border-radius: 0;
-      flex-basis: auto;
     }
   }
 
