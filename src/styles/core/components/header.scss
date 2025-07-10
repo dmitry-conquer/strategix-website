@@ -3,7 +3,10 @@
 .header {
   background-color: var(--color-primary-dark);
   padding: 0.75rem 0;
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
 
   @media (max-width: 640px) {
@@ -61,7 +64,8 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: var(--color-secondary);
+        text-decoration: underline;
+        text-underline-offset: 0.25em;
       }
     }
   }

@@ -13,8 +13,8 @@
     <title>Home page</title>
   </head>
   <body id="home" data-smooth-scroll="true">
+    {{> header}}
     <div class="wrapper">
-      {{> header}}
       <main>
         <section class="hero" style="background-image: url(&quot;/images/hero-bg.png&quot;)">
           <div class="hero__container container">
@@ -484,22 +484,21 @@
           </div>
         </section>
       </main>
-      {{> footer}} {{> modal}}
-
-      
-
-      <script>
-        const backendData = {
-          smoothScroll: true,
-        };
-      </script>
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"
-        integrity="sha512-h5Vv+n+z0eRnlJoUlWMZ4PLQv4JfaCVtgU9TtRjNYuNltS5QCqi4D4eZn4UkzZZuG2p4VBz3YIlsB7A2NVrbww=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-      ></script>
     </div>
+
+    {{> footer}} {{> modal}}
+
+    <script>
+      const backendData = {
+        smoothScroll: true,
+      };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"
+      integrity="sha512-h5Vv+n+z0eRnlJoUlWMZ4PLQv4JfaCVtgU9TtRjNYuNltS5QCqi4D4eZn4UkzZZuG2p4VBz3YIlsB7A2NVrbww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="module" src="/src/scripts/main.ts" defer></script>
   </body>
 </html>
