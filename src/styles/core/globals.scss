@@ -36,6 +36,12 @@ body {
 .section-padding-top {
   padding-top: var(--section-padding-y);
 }
+.section-padding-top-full {
+  padding-top: var(--section-padding-top-full);
+}
+.section-padding-bottom-full {
+  padding-bottom: var(--section-padding-bottom-full);
+}
 
 .section-padding-bottom {
   padding-bottom: var(--section-padding-y);

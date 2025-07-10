@@ -13,15 +13,15 @@
     &--small {
       width: fluid(68, 96);
       height: auto;
-      top: rem(-44);
-      left: fluid(16, 67);
+      top: rem(-58);
+      left: fluid(16, 80);
       transform: translateY(-100%);
     }
     &--big {
       width: fluid(68, 152);
       height: auto;
-      bottom: rem(-29);
-      right: 0;
+      bottom: rem(-50);
+      right: rem(-65);
       transform: translateY(100%);
 
       @include small {

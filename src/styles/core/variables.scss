@@ -35,6 +35,8 @@
   --container-width: #{rem(1560)};
   --container-padding-x: #{rem(20)};
   --section-padding-y: #{fluid(40, 90)};
+  --section-padding-top-full: #{fluid(90, 180)};
+  --section-padding-bottom-full: #{fluid(90, 180)};
 
   // ===============================
   // 🎭 BORDERS & RADIUS

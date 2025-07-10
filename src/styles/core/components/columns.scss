@@ -1,12 +1,7 @@
 @use "../helpers" as *;
 
 .columns {
-  
   position: relative;
-  
-  &__container {
-    padding-bottom: fluid(123, 140);
-  }
 
   &__header {
     display: flex;

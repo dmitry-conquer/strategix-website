@@ -1,8 +1,8 @@
 @use "../helpers" as *;
 
 .base-hero {
-  padding-top: fluid(80, 180);
-  padding-bottom: fluid(60, 100);
+  padding-top: fluid(80, 220);
+  padding-bottom: fluid(60, 110);
 
   &__container {
     display: flex;
